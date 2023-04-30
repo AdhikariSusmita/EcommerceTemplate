@@ -1,0 +1,915 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>	</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+ </head>
+ <body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+
+
+    <!-- Nav bar -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+
+
+      <form class="d-flex" role="search">
+
+
+      	<label for="cars">Category:</label>
+<select id="Category" name="Category">
+  <option value="Women's Fashion">Women's Fashion</option>
+  <option value="Men's Fashion">Men's Fashion</option>
+  <option value="Electronics">Electronics</option>
+  <option value="Automobiles<">Automobiles</option>
+</select>
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+   <!-- Button trigger modal -->
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+ Login
+</button>
+
+       <!-- Modal -->
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      	<div style="text-align:center;padding-top: 30px"><h3>Login</h3></div>
+        
+      <div class="modal-body">
+        <form>
+        	<!--Login Form -->
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+</nav>
+
+			<ul class="nav">
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Profile</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Messages</a>
+				</li>
+				<li class="nav-item dropdown ml-md-auto">
+					 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Dropdown link</a>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+						 <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
+						<div class="dropdown-divider">
+						</div> <a class="dropdown-item" href="#">Separated link</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+
+			<!-- category  -->
+
+<ul class="list-group">
+  <li class="list-group-item">Women's Fashion</li>
+  <li class="list-group-item">Men's Fashion</li>
+  <li class="list-group-item">Electronics</li>
+  <li class="list-group-item">Automobiles</li>
+  <li class="list-group-item">Health & Beauty</li>
+  <li class="list-group-item">Groceries</li>
+</ul>
+
+		</div>
+		<div class="col-md-9">
+
+	<!-- slider -->
+
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://icms-image.slatic.net/images/ims-web/421ffb19-d72c-4c2e-9789-1fa7675afdbc.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://icms-image.slatic.net/images/ims-web/32331f85-0180-439a-ac82-0c97d4c131db.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://icms-image.slatic.net/images/ims-web/9af16b38-3ae1-4ea5-a2e0-d629d67767f3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/b88819a7232864c5db83e4b38d781acc.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Bow Hair clip</h6>
+			    <p class="card-text">Rs. 200</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/30f6d71048c1c3417e9aa2803c195fec.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Earring Set</h6>
+			    <p class="card-text">Rs. 320</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+			
+		</div>
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/222761b57e64fcb24f67f54ac16f3108.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Pearl mini Hair clip</h6>
+			    <p class="card-text">Rs. 225</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+
+
+		</div>
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/50a0bf8a85f3998393f5e9f3c2d8de2e.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Multi layer Necklace</h6>
+			    <p class="card-text">Rs. 432</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/6803074f4e1946abfd51c771f237c92e.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Couple Bracelet</h6>
+			    <p class="card-text">Rs. 315</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+
+		</div>
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/df545fe268af784137fe4bb43eae9fe9.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Scrunchies</h6>
+			    <p class="card-text">Rs. 150</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/75cdf8b2f10ebd9e2bbf7f3ef2f5e2ca.png"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Rimless sunglasses</h6>
+			    <p class="card-text">Rs. 695</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+
+		</div>
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/7e1d650d751662ada801d40615b1c8dc.png"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Cat-Eye Design Sunglasses</h6>
+			    <p class="card-text">Rs. 650</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/0da3248be21420781eff6759b349c582.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Sunglasses for kids</h6>
+			    <p class="card-text">Rs. 250</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/677eb86da8aabb7e8efaa5323c814aa1.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Sunglasses for kids</h6>
+			    <p class="card-text">Rs. 250</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+		</div>
+
+		<div class="col-md-2">
+
+				<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/36b62cb401b1ce2ba1d2a0d89de3d7c3.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Round Silver Frame sunglasses</h6>
+			    <p class="card-text">Rs. 1500</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/b0d01f9763d5a04c78e9f1e5bdbf75d9.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Transparent Lens sunglasses</h6>
+			    <p class="card-text">Rs. 1200</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/33336a89a26fb09beb2cdb2c40774513.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Skinn By Titan Womens Sheer 50ml</h6>
+			    <p class="card-text">Rs. 2,699</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+
+		</div>
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/02582efe87eaad032a6853a12b7bb274.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Victoria's Secret Perfume</h6>
+			    <p class="card-text">Rs. 1,700</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/f2e717c6eaf04e095b009f1d4d67b42b.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Burberry Touch Edp</h6>
+			    <p class="card-text">Rs. 3,580</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/9073f3a4dc9a7a4d44d8c937004a81a4.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Nautica Voyage Perfume For Men</h6>
+			    <p class="card-text">Rs. 3,999</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+		</div>
+
+		<div class="col-md-2">
+
+				<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/d3e43dbae859bb6eec353572ba98db6a.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Armaf Club Intense Perfume</h6>
+			    <p class="card-text">Rs. 4000</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/dec5caefe2679ee350261dc876383c60.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">FOGG Scent Impressio Perfume</h6>
+			    <p class="card-text">Rs. 1050</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+
+		</div>
+
+		<div class="row">
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/4cd2bb2a96e67f693c973d7b3bc1e65f.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Sneakers</h6>
+			    <p class="card-text">Rs. 2,200</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+
+		</div>
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/d1142ecac9eb5307698fa65d056da14b.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Black sneakers</h6>
+			    <p class="card-text">Rs. 1,700</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/3b12324882db5752b4bd54311104954f.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">White Sneaker </h6>
+			    <p class="card-text">Rs. 2,350</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/595e6de7dbea492924ecdfdef7769f24.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Pointed Ankle boot</h6>
+			    <p class="card-text">Rs. 2,425</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+		</div>
+
+		<div class="col-md-2">
+
+				<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://np-live-21.slatic.net/kf/S6a61b06d536246ebb56618670e41f508H.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Winter boot</h6>
+			    <p class="card-text">Rs. 2,999</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/59ee280d52ac7a45c3680f021277dd14.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Leather long boots</h6>
+			    <p class="card-text">Rs. 2,921</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		
+
+		<div class="row">
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/ab96052b88f6516da398ed9c2f2a41b9.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Goldstar sport shoes</h6>
+			    <p class="card-text">Rs. 1,700</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+
+		</div>
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/205af0df62a34cde211d2b902d16ea92.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Breathable Sport shoe</h6>
+			    <p class="card-text">Rs. 1,650</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/8270006dbac8b9477743b8412ab69c4f.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Black Boot</h6>
+			    <p class="card-text">Rs. 1,270</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/3cb7f5ec2a3627b1c5ea8f14aaa794d3.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Delta boot</h6>
+			    <p class="card-text">Rs. 4,048</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+		</div>
+
+		<div class="col-md-2">
+
+				<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/2a5696c9471fc6ba2f38e8f77de61b52.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">High Top Ankle Shoe</h6>
+			    <p class="card-text">Rs. 2,429</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/adedd5881f306aec8aabe173cc24cba8.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Formal Black Shoe</h6>
+			    <p class="card-text">Rs. 950</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="row">
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/92fc96e8c2e9877a43da5b181429982d.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Crossbody Handbag</h6>
+			    <p class="card-text">Rs. 850</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+
+		</div>
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/ef827f4a30e01b6b04c4556845caa8b8.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Shoulder Bag</h6>
+			    <p class="card-text">Rs. 750</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/a2e81f7968fc56650c7a0bcbd24eb1ef.png"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Mini Tassel Wallet</h6>
+			    <p class="card-text">Rs. 643</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/ab1ca0bdee2f0154a7be06e0351d0e89.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Tote Bag</h6>
+			    <p class="card-text">Rs. 800</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+		</div>
+
+		<div class="col-md-2">
+
+				<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/09cf813732b3ad26565b7c84245f42eb.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Gheri Tote Bag</h6>
+			    <p class="card-text">Rs. 449</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/80b5bf2362967fb7ca2e9d1b2c743e54.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Mheecha Nifty Tote Ice Grey/Orange</h6>
+			    <p class="card-text">Rs. 2,250</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+<div class="row">
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/d0ea79ed7012c47c33ad347d8f479079.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Cotton Sweatshirts</h6>
+			    <p class="card-text">Rs. 1,500</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+
+		</div>
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/d7f0c288fb1524b9f6a2c730f7c6a889.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Warm Polar Sided Zipped Hoodies</h6>
+			    <p class="card-text">Rs. 1100</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/55df0077d39552638254b7a133a47f67.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Half Winter Jacket</h6>
+			    <p class="card-text">Rs. 1,099</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/d5bd19d6282d43aa8aa3db3341d6f358.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Heavy Fur Jacket</h6>
+			    <p class="card-text">Rs. 1,600</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+		</div>
+
+		<div class="col-md-2">
+
+				<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/e530c4bbbdab5a1ebdf2762479c430bb.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Half Jacket,Hoodies and Joggers Set</h6>
+			    <p class="card-text">Rs. 2,600</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/cd936e8b2821811909e7b2db3e7a1074.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Double Layer Hooded Windcheater</h6>
+			    <p class="card-text">Rs. 1,299</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+		</div>
+
+		<div class="row">
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/dd9cba6bc83532b534ca83ad45223000.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Corduroy Puffer Jacket</h6>
+			    <p class="card-text">Rs. 2,450</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/688d17d88b78eb0f4fa317067644463d.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Half Jacket</h6>
+			    <p class="card-text">Rs. 1,999</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/300a0949d64daeb6a063477cfce480a9.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Cropped Cardigan</h6>
+			    <p class="card-text">Rs. 1,400</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/83bd77faa6c725b08eeedaea4b922b91.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Checked Plaid Shirt</h6>
+			    <p class="card-text">Rs. 1,200</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+		</div>
+
+		<div class="col-md-2">
+
+				<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/e6d9d1462eb352c4407d3e5403bf7c19.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Green Sweatshirt</h6>
+			    <p class="card-text">Rs. 1,450</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+		</div>
+
+		<div class="col-md-2">
+
+			<!-- product -->
+
+			<div class="card" style="width: 14rem;">
+			  <img src="https://static-01.daraz.com.np/p/0524b24ab71ef1eaa8aa7735cdaf3ad6.jpg"class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h6 class="card-title">Inner Fleece OversizedSweatshirt</h6>
+			    <p class="card-text">Rs. 1,350</p>
+			    <a href="#" class="btn btn-primary">Add to cart</a>
+			  </div>
+		</div>
+
+
+		</div>
+
+</div>
+
+ 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+ </body>
+ </html>
